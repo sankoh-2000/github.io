@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Contact & Location | Tech Company</title>
+
+    <link rel=" stylesheet " href="styles.css ">
+</head>
+
+<body>
+    <header class="header ">
+        <!-- Logo section -->
+        <header>
+            <a href="index.html " class="logo-link ">
+                <h1 class="logo-text ">LionHeart360</h1>
+            </a>
+        </header>
+        <nav id="nav " class="nav ">
+            <a href="index.html ">Home</a>
+            <a href="about.html ">About</a>
+            <a href="services.html ">Services</a>
+            <a href="gallery.html ">Gallery</a>
+            <a href="booking.html ">Booking</a>
+            <a href="contact.html " class="active ">Contact</a>
+            <a href="login.html ">Admin</a>
+        </nav>
+        <div class="hamburger " id="hamburger ">&#9776;</div>
+    </header>
+    <section class="hero ">
+        <h1>Welcome to LION HEART360</h1>
+        <p>Your partner for innovation, technology, and excellence.</p>
+        <button onclick="location.href='booking.html' ">Book Appointment</button>
+    </section>
+    <main class="main ">
+
+        <section class="contact ">
+            <h2>Contact & Location</h2>
+            <section class="contact-content ">
+                <div class="contact-info ">
+                    <h2>Contact Me</h2>
+                    <p>Email: davidsankon80@gmail.com</p>
+                    <p>Phone: +23274102622</p>
+                    <a href="https://wa.me/+23274102622 " target="WhatsApp ">
+                        <img src="images/th.webp " alt="WhatsApp " />
+                    </a>
+                    <a href="https://wa.me/+23274102622 ">
+                        <h1>WhatsApp</h1>
+                    </a>
+
+                    <a href="mailto:davidsankoh80.com ">
+                        <img src="images/download.webp " alt="Email " />
+                    </a>
+                    <a href="mailto:davidsankoh80.com ">
+                        <h1>Email</h1>
+                    </a>
+
+                    <a href="tel:+23231658246 "><img src="images/OIP.webp " alt=" "></a>
+
+                    <a href="tel:+23231658246 ">
+                        <h1>call now</h1>
+                    </a>
+
+
+            </section>
+
+            <section id="location ">
+                <h2>Location</h2>
+
+                <h2>333 Lower Allentown Freetown</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18... " width="100% " height="300 " style="border:0; " allowfullscreen=" " loading="lazy ">333 lower Allentown</iframe>
+                <a href="https://mapcarta.com/Freetown " target="_blank ">
+                    <img src="https://ontheworldmap.com/images/freetown-map.jpg " alt="Freetown Map " style="width:100%; max-width:600px; ">
+                </a>
+
+            </section>
+    </main>
+    </main>
+    <footer class="footer ">
+        <div class="footer-container ">
+            <div class="footer-branding ">
+                <h2>LionHeart360</h2>
+                <p>Empowering organizations through smart tech & bold design.</p>
+                <img src=" " alt=" ">
+            </div>
+
+            <div class="footer-links ">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li> <a href="index.html ">Home</a></li>
+                    <li>
+                        <a href="about.html ">About</a>
+                    </li>
+                    <li>
+                        <a href="services.html ">Service</a>
+                    </li>
+                    <li>
+                        <a href="contact.html ">Contact</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html ">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="Admin.html ">Admin</a>
+                    </li>
+                    <li> <a href="Booking.html ">Booking</a></li>
+
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="footer-contact ">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:info@lionheart360.com ">info@lionheart360.com</a></p>
+                <p>Phone: +232-76-123-456</p>
+                <div class="social-icons ">
+                    <a href="# "><i class="fab fa-facebook-f "></i></a>
+                    <a href="# "><i class="fab fa-instagram "></i></a>
+                    <a href="# "><i class="fab fa-linkedin-in "></i></a>
+                </div>
+            </div>
+
+            <div class="footer-newsletter ">
+                <h3>Stay Updated</h3>
+                <form id="newsletter-form ">
+                    <input type="email " placeholder="Your email " required />
+                    <button type="submit ">Subscribe</button>
+                </form>
+                <p id="newsletter-msg "></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom ">
+            <p>&copy; <span id="year "></span> LionHeart360. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Auto-update year
+        document.getElementById("year ").textContent = new Date().getFullYear();
+
+        // Newsletter form feedback
+        document.getElementById("newsletter-form ").addEventListener("submit ", function(e) {
+            e.preventDefault();
+            const msg = document.getElementById("newsletter-msg ");
+            msg.textContent = "Thanks for subscribing! ";
+            msg.style.color = "#f9c846 ";
+            this.reset();
+        });
+    </script>
+    <script src="app.js "></script>
+    <script src="app.js "></script>
+</body>
+
+</html>

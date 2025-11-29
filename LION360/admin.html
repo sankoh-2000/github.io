@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>LION HEART360</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo-link">
+            <h1 class="logo-text">LionHeart360</h1>
+        </a>
+        <nav id="nav" class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="booking.html">Booking</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Admin</a>
+        </nav>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+    </header>
+    <section class="hero">
+        <h1>Welcome to LION HEART360</h1>
+        <p>Your partner for innovation, technology, and excellence.</p>
+        <button onclick="location.href='booking.html'">Book Appointment</button>
+    </section>
+    <main class="main">
+        <section class="admin">
+            <h2>Admin Dashboard</h2>
+            <form id="announcement-form">
+                <h3>Post Announcement</h3>
+                <textarea name="announcement" required placeholder="Announcement..."></textarea>
+                <button type="submit">Post</button>
+            </form>
+            <div id="announcement-list"></div>
+            <form id="gallery-form">
+                <h3>Upload Image/Video</h3>
+                <input type="file" name="media" accept="image/*,video/*" required />
+                <input type="text" name="caption" placeholder="Caption (optional)" />
+                <button type="submit">Upload</button>
+            </form>
+            <div id="gallery-section">
+                <h3>Gallery</h3>
+                <div class="gallery-grid" id="gallery-grid"></div>
+            </div>
+            <form id="info-form">
+                <h3>Company Info</h3>
+                <textarea name="info" required placeholder="Company information..."></textarea>
+                <button type="submit">Save</button>
+            </form>
+            <div id="info-display"></div>
+            <div id="admin-msg"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-branding">
+                <h2>LionHeart360</h2>
+                <p>Empowering organizations through smart tech & bold design.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="Admin.html">Admin</a></li>
+                    <li> <a href="Booking.html">Booking</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:info@lionheart360.com">info@lionheart360.com</a></p>
+                <p>Phone: +232-76-123-456</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Stay Updated</h3>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Your email" required />
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p id="newsletter-msg"></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> LionHeart360. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

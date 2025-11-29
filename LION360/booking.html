@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>LION HEART360</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <!-- Logo section -->
+        <header>
+            <a href="index.html" class="logo-link">
+                <h1 class="logo-text">LionHeart360</h1>
+            </a>
+        </header>
+        <nav id="nav" class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="booking.html" class="active">Booking</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Admin</a>
+        </nav>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+    </header>
+    <section class="hero">
+        <h1>Welcome to LION HEART360</h1>
+        <p>Your partner for innovation, technology, and excellence.</p>
+        <button onclick="location.href='booking.html'">Book Appointment</button>
+    </section>
+
+    <main class="main">
+        <section class="hero">
+            <section class="booking">
+
+                <section class="book-content">
+                    <h1>Book an Appointment</h1>
+                    <form id="bookingForm">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required />
+
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required />
+
+                        <label for="service">Service Requested</label>
+                        <select id="service" required>
+        <option value="">-- Select a service --</option>
+        <option value="web_design">Web Design</option>
+        <option value="development">Web Development</option>
+        <option value="marketing">Digital Marketing</option>
+        <option value="consultation">Consultation</option>
+            <option value="App Development">App Development</option>
+            <option value="IT Consulting">IT Consulting</option>
+            <option value="Cloud solution">Cloud Solutions</option>
+      </select>
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" required />
+
+                        <label for="Time">preferred time</label>
+                        <input type="Time" id="Time" required>
+
+                        <label for="message">Additional Notes</label>
+                        <textarea id="message" rows="4" placeholder="Your message..."></textarea>
+
+                        <button type="submit">Submit Booking</button>
+
+
+                    </form>
+
+                </section>
+
+            </section>
+    </main>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-branding">
+                <h2>LionHeart360</h2>
+                <p>Empowering organizations through smart tech & bold design.</p>
+                <img src="" alt="">
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Service</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="Admin.html">Admin</a>
+                    </li>
+                    <li> <a href="Booking.html">Booking</a></li>
+
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:info@lionheart360.com">info@lionheart360.com</a></p>
+                <p>Phone: +232-76-123-456</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-newsletter">
+                <h3>Stay Updated</h3>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Your email" required />
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p id="newsletter-msg"></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> LionHeart360. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Auto-update year
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Newsletter form feedback
+        document.getElementById("newsletter-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const msg = document.getElementById("newsletter-msg");
+            msg.textContent = "Thanks for subscribing!";
+            msg.style.color = "#f9c846";
+            this.reset();
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>cript>
+<script src="app.js"></script>
+</body>
+
+</html>
